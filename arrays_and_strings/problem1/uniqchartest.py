@@ -1,5 +1,5 @@
 import unittest
-from uniqchar import UniqueChar
+from arrays_and_strings.problem1.uniqchar import UniqueChar
 
 class TestUniqueChar(unittest.TestCase):
 
