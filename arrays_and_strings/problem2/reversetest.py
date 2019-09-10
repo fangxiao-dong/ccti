@@ -1,5 +1,5 @@
 import unittest
-from arrays_and_strings.problem2.reverse import Solution
+from reverse import Solution
 
 class TestReverse(unittest.TestCase):
 
