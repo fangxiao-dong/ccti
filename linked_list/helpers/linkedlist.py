@@ -5,30 +5,30 @@ class Node(object):
         self.data = data
         self.next = next
 
-        def append(self, data):
-            node = Node(data)
-            current = self
+    def append(self, data):
+        node = Node(data)
+        current = self
 
-            while current.next is not None:
-                current = current.next
+        while current.next is not None:
+            current = current.next
 
-            current.next = node
+        current.next = node
 
-        def delete(self, head, data):
-            current = head
+    def delete(self, head, data):
+        current = head
 
-            if current.data == data:
-                return current.next
+        if current.data == data:
+            return current.next
 
-            while current.next is not None:
+        while current.next is not None:
 
-                if current.next.data == data:
-                    current.next = current.next.next
-                    return head
+            if current.next.data == data:
+                current.next = current.next.next
+                return head
 
-                current = current.next
+            current = current.next
 
-            return head
+        return head
 
 
 
